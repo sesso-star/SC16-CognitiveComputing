@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,margin=1in,footskip=0.25in]{geometry} % set margins
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}    % needed for include graphics
+\usepackage{indentfirst}
+\usepackage{float}       % needed for [H] figure placement option
+\usepackage{setspace}    % needed for doublespacing
+\usepackage{tikz}
+
+% Macros
+\renewcommand{\familydefault}{\sfdefault} % sans-serif
+\newcommand{\lowtext}[1]{$_{\text{#1}}$}
+
+% Adds ./figures/ to the path of figures
+\graphicspath{./figures/}
+
+\title{SC16 Keynote sobre Computação Cognitiva}
+\author{Bruno Sesso, Gustavo Estrela de Matos}
+
+\begin{document}
+% Espaçamento duplo? Sim até que alguém diga o contrário 
+\doublespacing
+\begin{titlepage}
+    \vfill
+    \begin{center}
+        \vspace{0.5\textheight}
+        \noindent
+        Instituto de Matemática e Estatística \\
+        Monografia sobre Computação Cognitiva \\
+        \vfill
+        \noindent
+        {\Large SC16 Keynote sobre Computação Cognitiva} \\
+        \begin{tabular}{rl}
+            {\bf Professor:} & {Alfredo Goldman vel Lejbman} \\
+            {\bf Alunos:}    & {Bruno Sesso} \\
+                             & {Gustavo Estrela de Matos} \\
+        \end{tabular} \\
+        \vspace{\fill}
+       \bigskip
+        São Paulo, \today \\
+       \bigskip
+    \end{center}
+\end{titlepage}
+
+\pagebreak
+\tableofcontents
+\pagebreak
+
+% o que é computação cognitiva
+\section{Introdução}
+
+
+% Sim. Nos últimos anos conseguimos:
+% 1, melhores algoritmos de machine learning
+% 2, mais dados
+% 3, melhoras em performance
+% 4, mais investimentos
+\pagebreak
+\section{É Possível Construir um Sistema Cognitivo?}
+
+\pagebreak
+\section{Uso de Computação Cognitiva}
+\subsection{No Ambiente Médico}
+\subsection{No Ambiente Educacional}
+
+
+\pagebreak
+\begin{thebibliography}{1}
+\bibitem{katherine_frase_keynote} Video: SC16 Introduction and Keynote
+    Katharine Frase. Acessível em: 
+    \url{https://www.youtube.com/watch?v=s0KzMK_rh_g&t=1483s}
+\end{thebibliography}
+
+\end{document}
+
+
