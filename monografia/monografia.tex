@@ -137,6 +137,50 @@ mais do que um humano. Infelizmente, apesar de gerarmos muitos dados
 atualmente, existem muitas coisas que não geram dado algum ou produz 
 dados pouco estruturados e com ruídos.
 
+\section{Arquiteturas de Sistemas Cognitivo}
+Como dizemos anteriormente, sistemas cognitivos como o IBM Watson, 
+são máquinas de grande porte, caras e que consomem muita energia. Isso
+acontece porque os algoritmos que promovem a cognição na máquina são
+complexos e dependem do processamento de muitos dados. Porém, como seria
+nosso cérebro capaz de realizar atividades parecidas, com melhor 
+desempenho e consumo muito menor de energia? Não sabemos, mas isso 
+evidencia que nosso modelo computacional pode não ser o melhor para 
+criar (simular) a cognição.
+
+Porém, quando tentamos simular o cérebro humano, caímos em um problema
+comum em qualquer tipo de simulação: qual nível de detalhes utilizar?
+Se usarmos um modelo muito abstrato, longe da realidade do cérebro, é
+provável que obtenhamos resultados inconsistentes com a realidade. 
+Por outro lado, uma simulação muito detalhada facilmente tornaria-se
+computacionalmente intratável, até mesmo para cérebros de animais mais 
+simples; o cérebro de um rato, por exemplo, tem por volta de $10^{12}$ 
+sinapses, e se usássemos 1 byte para representar cada uma delas, 
+precisaríamos de 1 TB de memória.
+
+Diferentes ramos da ciência que estudam o cérebro usam diferentes 
+resoluções, porém é bem aceito que o neurônio seja usado como um objeto
+básico na maioria dessas áreas. A IBM acredita nesse nível de resolução
+e pesando em criar uma máquina mais similar ao cérebro, tanto em sua
+estrutura quanto em seu "algoritmo", ela desenvolveu o chip TrueNorth.
+
+O chip TrueNorth implementa em hardware uma rede neural programável, e 
+possui 4096 cores, cada um deles simulando 256 neurônios, com 256
+sinapses cada um, totalizando por volta de 268 milhões de sinapses em
+um chip. O número de transistores nesse chip é de 5,5 bilhões, e na 
+época de seu lançamento era o chip com maior número de transistores já
+feito. Além disso, o consumo desse chip é de $70$ mW, enquanto
+o Watson consome $20$ kW, ou seja, uma diferença da ordem de $10 ^ 6$ W.
+
+A IBM ainda trabalha na criação de um ambiente para programação do 
+TrueNorth e garante que o chip é capaz de resolver diversos problemas
+de visão, áudio e aprendizado de máquina no geral. Porém, a própria
+empresa afirma que o chip ainda não é uma solução para substituição do
+modelo de von Neumann, e sim um co-processador. Usando uma analogia com
+o próprio cérebro humano, a IBM afirma que a arquitetura clássica pode
+ser vista como o lado esquerdo do cérebro, responsável por cálculos,
+enquanto o TrueNorth pode ser visto como o lado direito, sensorial e
+reconhecedor de padrões.
+
 % Sim. Nos últimos anos conseguimos:
 % 1, melhores algoritmos de machine learning
 % 2, mais dados
